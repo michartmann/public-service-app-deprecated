@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+     <link href="index-filer/kendo_002.css" rel="stylesheet">
+    <link href="index-filer/kendo_003.css" rel="stylesheet">
+    <link href="kendoui/styles/kendo.mobile.all.min.css" rel="stylesheet">
+	<link href="index-filer/examples.css" rel="stylesheet">
+	
+
+    
+    <script src="index-filer/jquery-1.js"></script>
+    <script src="index-filer/kendo.js"></script>
+    <script src="index-filer/examples.js"></script>
+    <script src="index-filer/console.js"></script>
+    <script src="index-filer/prettify.js"></script>
+</head>
+<body>
+   				<div data-role="view" id="tabstrip-rating" data-title="Tilføj foto" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>Anvend kamera eller tilføj fra kamerarulle
+            <ul>
+                <li>
+		<a data-role="button" data-icon="camera" style="width:40%;">Tag foto</a><a data-role="button" data-icon="organize" style="width:40%;margin-left:16px;">Gennemse</a></li>
+            </ul>
+        </li>
+		
+		<li>
+            
+            <ul>
+                <li>
+		<img src="index-filer/rotte.jpg" style="width:93%;"/></li>
+		<li>
+		<a href="#tabstrip-profile" data-role="button"  style="width:93%;">Vedlæg foto</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+                     <div data-role="view" id="tabstrip-profile" data-title="Kontakt kommunen vedrørende" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+      
+        <li>
+            Skadedyr, ukrudt m.m.
+            <ul>
+                <li><a href="#tabstrip-rotter">Anmeldelse af rotter</a></li>
+				<li><a>Anmeldelse af husmår</a></li>
+                 <li><a>Løse hunde</a></li>
+				     <li><a>Vilde katte</a></li>
+				   
+			
+            </ul>
+			</li>
+			<li>
+			Veje
+			<ul>
+                <li><a>Gravning i vej, fortov mm.</a></li>
+				 <li><a>Hul i belægning (vej, fortov, m.m)</a></li>
+				  <li><a>Lysreguleret kryds</a></li>
+				   <li><a>Vejskilte og vejstriber</a></li>
+ </ul>
+ </li>
+<li>
+Grønne områder
+<ul>
+                <li><a>Her har jeg set bjørneklo</a></li>
+				 <li><a>Hække og buske mod vej som generer færdslen</a></li>
+				  <li><a>Træer, buske og græs</a></li>
+ </ul>
+ </li>
+<li>
+Andre ting
+<ul>
+                <li><a>Graffiti på vejbelægning, vejskilte, bænke m.m.</a></li>
+				 <li><a>Skader på bænke, skraldespande og badebro m.m.</a></li>
+				  <li><a>Affald på veje og grønne områder</a></li>
+				    <li><a>Buslæskur</a></li>
+					<li><a>Andet</a></li>
+ </ul>
+ </li>
+<li>
+
+
+Dit Gadelys
+<ul>
+                <li><a>Her kan du fejlmelde dit gadelys (hos DONG Energy A/S).</a></li>
+				
+ </ul>
+
+        </li>
+        
+    </ul>
+</div>
+
+                     <div data-role="view" id="tabstrip-rotter" data-title="Anmeldelse af rotter" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+      
+      
+                  <li>
+            Vælg venligst
+            <ul>
+                <li><a href="#tabstrip-sales">Rotte i beboelsesrum</a></li>
+                <li><a href="#tabstrip-sales">Rotte i kælder, loft, skunk eller lignende</a></li>
+                <li><a href="#tabstrip-sales">Rotte udenfor</a></li>
+                <li><a href="#tabstrip-sales">Rottehuller observeret</a></li>
+				 <li><a href="#tabstrip-sales">Rotte ved husdyr (høns, kaniner, heste el.lign.)</a></li>
+				  <li><a href="#tabstrip-sales">Rotte i udhuse m.v.</a></li>
+				   <li><a href="#tabstrip-sales">Andet (angiv nedenfor)</a></li>
+			
+            </ul>
+        </li>
+        
+    </ul>
+</div>
+
+<div data-role="view" id="tabstrip-sales" data-title="Angiv sted" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>
+   
+            Angiv adresse for observationen
+            <ul>
+                <li>Vej og husnr<span class="value"><input type="text" value=""/></li>
+                <li>Postnr<span class="value"><input type="text" value=""/></li>
+                <li>By<span class="value"><input type="text" value=""/></li>
+            </ul>
+       
+        </li>
+		 
+		<li>
+		<br/><br/>
+		Bestem position med telefonens GPS
+		<ul>
+                <li>
+		<a data-role="button" data-icon="globe" style="width:93%;">Hent position</a></li>
+            </ul>
+		</li>
+    </ul>
+</div>
+
+<div data-role="view" id="tabstrip-settings" data-title="Dine kontaktoplysninger" data-layout="mobile-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>
+           
+            <ul>
+                <li>Navn *<span class="value"><input type="text" value=""/></li>
+                <li>Tlf *<span class="value"><input type="text" value=""/></li>
+                <li>email<span class="value"><input type="text" value=""/></li>
+            </ul>
+			<br/>
+			I tilfælde af at kommunen har brug for yderligere information, vil du blive kontaktet
+        </li>
+		<li>
+		<br/><br/>
+		
+		<ul>
+                <li>
+		<a data-role="button" data-icon="action" style="width:93%;">Opret henvendelse</a></li>
+            </ul>
+		</li>
+    </ul>
+</div>
+
+<div data-role="layout" data-id="mobile-tabstrip">
+    <header data-role="header">
+        <div data-role="navbar">
+            <!--<a class="nav-button" data-align="left" data-role="backbutton">Back</a>-->
+            <span data-role="view-title"></span>
+            <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+        </div>
+    </header>
+
+    <p>TabStrip</p>
+
+    <div data-role="footer">
+        <div data-role="tabstrip">
+		<a href="#tabstrip-rating" data-icon="camera">Tilføj foto</a>
+            <a href="#tabstrip-profile" data-icon="compose">Beskriv problemet</a>
+            <a href="#tabstrip-sales" data-icon="globe">Angiv position</a>
+            <a href="#tabstrip-settings" data-icon="action">Indsend</a>
+        </div>
+    </div>
+</div>
+
+<style scoped>
+
+.buttonAppearance .km-button:not(.km-back)
+        {
+            width: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+    #tabstrip-profile h2 {
+        display: inline-block;
+        font-size: 1.1em;
+        margin: 1.5em 0 0 1em;
+    }
+    #tabstrip-profile h2 span {
+        display: block;
+        clear: both;
+        font-size: 2em;
+        margin: .2em 0 0 0;
+    }
+    #tabstrip-profile img {
+        width: 5em;
+        height: 5em;
+        float: left;
+        margin: 1em;
+        -webkit-box-shadow: 0 1px 3px #333;
+        box-shadow: 0 1px 3px #333;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+    }
+    .sales-down,
+    .sales-hold,
+    .sales-up,
+    .value {
+        float: right;
+    }
+    .sales-up { color: green; }
+    .sales-down { color: red; }
+    .sales-hold { color: blue; }
+    .value { color: #bbb; }
+</style>
+
+
+<script>
+    var app = new kendo.mobile.Application(document.body);
+</script>
+</body>
+</html>
